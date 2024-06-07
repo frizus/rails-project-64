@@ -72,3 +72,7 @@ end
 group :production do
   gem "pg"
 end
+
+gem "stackprof"
+gem "sentry-ruby"
+gem "sentry-rails"
