@@ -52,6 +52,7 @@ group :development, :test do
   gem "sqlite3", "~> 1.4"
 
   gem "slim_lint"
+  gem "rubocop", "!= 1.64.1", require: false
   gem "rubocop-rails", require: false
 end
 

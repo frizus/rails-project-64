@@ -1,1 +1,30 @@
 require: rubocop-rails
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - app/assets/**/*
+    - bin/*
+    # Exclude db/schema.rb and db/[CONFIGURATION_NAMESPACE]_schema.rb by default.
+    # See: https://guides.rubyonrails.org/active_record_multiple_databases.html#setting-up-your-application
+    - db/*schema.rb
+    - log/**/*
+    - public/**/*
+    - storage/**/*
+    - config/**/*
+    - config.ru
+    - Rakefile
+    - Gemfile
+    - db/**
+    # https://github.com/rubocop/rubocop/issues/9832#issuecomment-853034506
+    - vendor/bundle/**/*
+  SuggestExtensions: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
