@@ -50,6 +50,9 @@ group :development, :test do
 
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
+
+  gem "slim_lint"
+  gem "rubocop-rails", require: false
 end
 
 group :development do
@@ -76,3 +79,4 @@ end
 gem "stackprof"
 gem "sentry-ruby"
 gem "sentry-rails"
+gem "slim"
